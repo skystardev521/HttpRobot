@@ -1,11 +1,11 @@
 [package]
-name = "HttpRobot"
+name = "http_robot"
 version = "0.1.0"
 description = "A Tauri App"
 authors = ["skystardev@gmail.com"]
 license = ""
 repository = ""
-default-run = "HttpRobot"
+default-run = "http_robot"
 edition = "2021"
 rust-version = "1.62"
 
