@@ -56,11 +56,23 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "HttpRobot",
-        "width": 800
+        "fullscreen": false,
+        "resizable": true,
+        "center": true,
+        "height": 600,
+        "width": 800,
+        "transparent": true,
+        "theme": "Dark",
+        "visible": false
+      },
+      {
+        "width": 400,
+        "height": 200,
+        "center": true,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen"
       }
     ]
   }

@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html>
-<style>
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
-
-<body>
+<link rel="stylesheet" href="style.css">
+<body class="body">
   <h1>Tauri Commands</h1>
   <div>Response: <span id="response" name="test id name"></span></div>
   <div>Without Args: <span id="response-optional"></span></div>
@@ -58,6 +43,9 @@
       {
         name: 'command_arguments_tuple_struct',
         args: { InlinePerson: ['ferris', 6] }
+      },
+      {
+        name: 'open_remote_window'
       }
     ]
 
