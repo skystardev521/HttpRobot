@@ -122,3 +122,22 @@ pub async fn open_remote_window(handle: tauri::AppHandle) {
   remote_window.show().unwrap();
   println!("open_remote_window");
 }
+
+pub fn invoke_handler(builder: tauri::Builder<tauri::Wry>) -> tauri::Builder<tauri::Wry> {
+    builder.invoke_handler(tauri::generate_handler![
+        window_label,
+        simple_command,
+        stateful_command,
+        async_simple_command,
+        future_simple_command,
+        async_stateful_command,
+        command_arguments_wild,
+        command_arguments_struct,
+        stateful_command_with_result,
+        command_arguments_tuple_struct,
+        future_simple_command_with_return,
+        future_simple_command_with_result,
+        async_stateful_command_with_result,
+        open_remote_window,
+    ])
+}

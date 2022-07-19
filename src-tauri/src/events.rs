@@ -1,6 +1,6 @@
 use tauri::{self, CustomMenuItem, Manager, Menu, Submenu, WindowMenuEvent};
 
-use super::structs::{Payload};
+use super::structs::Payload;
 
 pub fn make_menu() -> Menu {
     let load_menu = CustomMenuItem::new("load_menu", "Load");
@@ -25,6 +25,7 @@ pub fn menu_event(event: WindowMenuEvent) {
     }
 }
 
+//-------有问题发送事件收不到-------
 pub fn listen_event<R: tauri::Runtime>(
     app: &mut tauri::App<R>,
 ) -> Result<(), Box<dyn std::error::Error>> {

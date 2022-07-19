@@ -62,7 +62,7 @@
         "center": true,
         "height": 600,
         "width": 800,
-        "transparent": true,
+        "transparent": false,
         "theme": "Dark",
         "visible": false
       },
